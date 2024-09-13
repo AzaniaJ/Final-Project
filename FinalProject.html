@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGenius Solutions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts for Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #141313;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: orange;
+            padding: 10px 0;
+        }
+
+        .navbar-brand {
+            color: #fff;
+            font-size: 24px;
+            padding: 0 20px;
+        }
+
+        .navbar-nav a {
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        .navbar-nav a:hover {
+            color: rgb(9, 23, 228);
+        }
+
+        .hero {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .stats div {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-item, .step-item, .doctor-item, .testimonial-item {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        footer {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+
+        .service-title, .product-title {
+            font-family: 'Times New Roman', Times, serif;
+            color: black; /* Change color to black */
+        }
+
+        .same-size-img {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover; 
+            transition: transform 0.3s ease, filter 0.3s ease; 
+        }
+
+        .same-size-img:hover {
+            transform: scale(1.05); 
+            filter: brightness(70%); 
+        }
+
+        .stat-item {
+            font-family: 'Times New Roman', Times, serif;
+            color: blue;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .stat-item strong {
+            display: block;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+
+        .stat-item i {
+            color: orange; /* Set icon color to orange */
+        }
+
+        .stat-item:hover {
+            transform: scale(1.1); /* Pop effect */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Slight shadow effect */
+        }
+
+        .cta p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .cta .btn {
+            background-color: orange;
+            border: none;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .cta .btn:hover {
+            background-color: blue;
+            transform: scale(1.05); /* Slight zoom effect */
+        }
+
+        /* Ensure images are responsive */
+        .header-img, .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">TechGenius Solutions</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-products">Our Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-services">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#buy">Buy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-contacts">Our Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white border-bottom">
+        <div class="container text-left py-4">
+            <img src="https://media.istockphoto.com/id/1552875565/photo/programming-coding-and-man-with-focus-hologram-and-trading-with-cyber-security-futuristic-and.jpg?s=2048x2048&w=is&k=20&c=7Q0gCKM7iyCPHWopYWsFQkDXhs2OqHIbk3sJ32l3kFM=" class="header-img img-fluid" alt="TechGenius">
+            <h1>TechGenius</h1>
+            <p>We provide custom software, IT Consulting, Cloud Solution, AI integration and managed services to help businesses optimize their operations.</p>
+            <button class="btn btn-primary me-2">Sign Up</button>
+            <button class="btn btn-outline-secondary">Log In</button>
+        </div>
+    </header>
+
+    <div class="container hero text-center my-5">
+        <h1>Welcome to TechGenius Solutions</h1>
+    </div>
+
+    <div class="container stats my-5">
+        <div class="row gx-4">
+            <div class="col-md-3 stat-item">
+                <i class="fas fa-smile-beam fa-3x mb-2"></i> 
+                <strong>95%</strong> Satisfaction
+            </div>
+            <div class="col-md-3 stat-item">
+                <i class="fas fa-handshake fa-3x mb-2"></i> 
+                <strong>1,500+</strong> Partners
+            </div>
+            <div class="col-md-3 stat-item">
+                <i class="fas fa-users fa-3x mb-2"></i> 
+                <strong>3,000+</strong> Customers
+            </div>
+            <div class="col-md-3 stat-item">
+                <i class="fas fa-cogs fa-3x mb-2"></i> 
+                <strong>100+</strong> Services
+            </div>
+        </div>
+    </div>
+
+    <div class="container services my-5">
+        <h2 class="text-center mb-4">Our Best Services</h2>
+        <div class="row">
+            <div class="col-md-3 service-item text-center">
+                <h4 class="service-title">Custom Software Development</h4>
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dGVjaG5vbG9neXxlbnwwfHwwfHx8MA%3D%3D" 
+                     alt="Custom Software Development" class="img-fluid same-size-img">
+            </div>
+            <div class="col-md-3 service-item text-center">
+                <h4 class="service-title">AI and Machine Learning</h4>
+                <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D" 
+                     alt="AI and Machine Learning" class="img-fluid same-size-img">
+            </div>
+            <div class="col-md-3 service-item text-center">
+                <h4 class="service-title">Maintenance and Support</h4>
+                <img src="https://plus.unsplash.com/premium_photo-1661727547850-3f4185b90815?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHRlY2hub2xvZ3l8ZW58MHx8MHx8MA%3D%3D" 
+                     alt="Maintenance and Support" class="img-fluid same-size-img">
+            </div>
+            <div class="col-md-3 service-item text-center">
+                <h4 class="service-title">Cloud Solutions</h4>
+                <img src="https://images.unsplash.com/photo-1506748686214e9df14c0d7b02e4df74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fHRlY2hub2xvZ3l8ZW58MHx8MHx8MA%3D%3D" 
+                     alt="Cloud Solutions" class="img-fluid same-size-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="container cta text-center my-5">
+        <p>Interested in our services? Get in touch with us today!</p>
+        <button class="btn btn-primary">Contact Us</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 TechGenius Solutions. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- FontAwesome for Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+</html>
